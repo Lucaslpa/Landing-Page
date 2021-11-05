@@ -1,4 +1,3 @@
-import arrowRight from '../../assets/rightArrow.svg';
 import * as S from './style';
 
 export type props = {
