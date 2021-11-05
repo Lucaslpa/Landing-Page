@@ -2,9 +2,9 @@ export const Theme = {
   spaces: {
     medium: '4.0rem',
   },
-  radius: '0.4rem',
+  radius: '0.6rem',
   fonts: {
-    xxSmall: '1.3',
+    xxSmall: '1.3rem',
     xSmall: '1.5rem',
     small: '1.7rem',
     medium: '2rem',
@@ -18,7 +18,9 @@ export const Theme = {
   colors: {
     gradient: 'linear-gradient(145.09deg, #26E9CF 11.81%, #25CDE1 95.89%)',
     primary: '#252160',
+    primaryLight: '#27216e',
     secondary: '#3AFFE5',
+    secondaryDark: '#32e3cc',
     blue: '#32B5FF',
     white: '#FFFFFF',
     black: '#0C0C0C',

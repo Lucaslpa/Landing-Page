@@ -4,7 +4,7 @@ export const GlobalStyle = createGlobalStyle`
   
   * {   
       box-sizing: border-box;
-      font-family: Inter, 'Courier New', Courier, monospace;
+      font-family: Inter;
       padding: 0;
       margin: 0; 
   }
