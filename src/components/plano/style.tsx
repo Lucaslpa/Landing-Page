@@ -28,7 +28,6 @@ export const Container = styled.div<{ color: 'dark' | 'light' }>`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 3rem;
   }
 
   position: relative;
@@ -47,7 +46,7 @@ export const Container = styled.div<{ color: 'dark' | 'light' }>`
 
     #priceAndButton {
        margin-top: 2.3rem;
-         margin-left: 5rem;
+        
     }
   `}
 `;
@@ -94,6 +93,9 @@ export const Promotion = styled.h4`
 
 export const Prices = styled.div<{ color: 'dark' | 'light' }>`
   position: relative;
+  width: 50%;
+  height: 100%;
+  padding-left: 15%;
   span {
     position: absolute;
     font-size: 1rem;
@@ -104,64 +106,55 @@ export const Prices = styled.div<{ color: 'dark' | 'light' }>`
     }
     #MoneySymbol {
       color: ${theme.colors.secondary};
+      font-family: Nunito Sans;
+      font-style: normal;
+      font-weight: 600;
       font-size: 1.1rem;
-      left: -110%;
-      top: 10%;
+      left: 17%;
+      top: 20%;
     }
     #TotalValue {
-      left: -100%;
-      top: -50%;
-      width: 10vw;
+      bottom: 90%;
+      left: 20%;
     }
     #payTime {
-      right: -170%;
-      top: 30%;
+      color: ${color === 'dark' ? '#ffffff73' : theme.colors.primary};
     }
     #Message {
-      top: 105%;
-      width: 15vw !important;
-      left: -210%;
+      top: 100%;
+      left: 20%;
     }
   `}
 
   ${media.greaterThan('medium')`
-      span {
-        font-family: Nunito Sans;
-        font-style: normal;
-        font-weight: 300;
+     span {
         font-size: 1.5rem;
-        line-height: 6.5rem;
-      }
-       #MoneySymbol {
-      font-family: Nunito Sans;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 20px;
-      line-height: 65px;
-      left: -120%;
-      top: -20%;
-    }
-    #TotalValue {
-      left: -100%;
-      top: -50%;
-     
-    }
-    #payTime {
-      right: -170%;
-      top: 10%;
-    }
-    #Message {
-      top: 50%;
-      width: 100vw;
-      left: -190%;
-    }
-  `}
+     }
+
+     #MoneySymbol {
+       font-family: Nunito Sans;
+       font-style: normal;
+       font-weight: 600;
+       font-size: 20px;
+        left: 14%;
+     }
+   
+   `}
 `;
 
 export const Price = styled.h5<{ color: 'dark' | 'light' }>`
   font-family: Nunito Sans, sans-serif;
   line-height: 2.7rem;
   font-weight: 800;
+  display: flex;
+  #payTime {
+    margin-left: 0.5rem;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    transform: translateY(-7%);
+  }
   ${({ theme, color }) => css`
     color: ${color === 'dark' ? theme.colors.white : theme.colors.primary};
     font-size: ${theme.fonts.medium};
@@ -173,6 +166,10 @@ export const Price = styled.h5<{ color: 'dark' | 'light' }>`
       font-weight: 800;
       font-size: 37px;
       line-height: 65px;
+      #payTime {
+        font-size: 1.5rem;
+         transform: translateY(7%);
+      }
   `}
 `;
 

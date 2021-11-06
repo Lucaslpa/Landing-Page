@@ -10,6 +10,8 @@ export type props = {
   discount?: number;
   totalValueWithoutDiscount: number;
   payTimes: string;
+  advantages: string[];
+  message: string;
 };
 
 export const Plano = ({
@@ -19,56 +21,43 @@ export const Plano = ({
   PlanoName,
   totalValueWithoutDiscount,
   discount,
+  advantages,
+  message,
 }: props) => {
+  function handleCalcDiscount() {
+    if (!discount) return;
+    const valueDiscount = (discount / 100) * totalValueWithoutDiscount;
+    const valueWithDiscount = totalValueWithoutDiscount - valueDiscount;
+    return valueWithDiscount.toFixed(0);
+  }
+
   return (
     <S.Container color={color}>
       <S.AccessTime>{accessTime} de acesso.</S.AccessTime>
       <S.Plano color={color}>{PlanoName}</S.Plano>
       <span id="advantage">vantagens</span>
       <S.Advantages color={color}>
-        <div>
-          <Check />
+        {advantages.map((advantage) => (
+          <div>
+            <Check />
 
-          <S.Advantage color={color}>
-            Acesso a todos os benefícios da Plataforma (Videoaulas, Exercícios,
-            Apostilas e muito mais)
-          </S.Advantage>
-        </div>
-
-        <div>
-          <Check />
-          <S.Advantage color={color}>
-            Grupo no Whatsapp com professores e alunos
-          </S.Advantage>
-        </div>
-
-        <div>
-          <Check />
-          <S.Advantage color={color}>Revisão para o ENEM</S.Advantage>
-        </div>
-
-        <div>
-          <Check />
-          <S.Advantage color={color}>
-            Grupo no Whatsapp com professores e alunos
-          </S.Advantage>
-        </div>
-
-        <div>
-          <Check />
-          <S.Advantage color={color}>
-            Reforço para FUVEST, Unicamp e Vestibulares de Medicina
-          </S.Advantage>
-        </div>
+            <S.Advantage color={color}>{advantage}</S.Advantage>
+          </div>
+        ))}
       </S.Advantages>
 
       <div id="priceAndButton">
         <S.Prices color={color}>
           <span id="MoneySymbol">R$</span>
-          <span id="TotalValue">de R$180,00</span>
-          <span id="payTime">/ano</span>
-          <span id="Message">Menos de 5 reais por mês</span>
-          <S.Price color={color}>4</S.Price>
+          {discount ? (
+            <span id="TotalValue">de R${totalValueWithoutDiscount} por</span>
+          ) : null}
+
+          {message ? <span id="Message">{message}</span> : null}
+          <S.Price color={color}>
+            {discount ? handleCalcDiscount() : totalValueWithoutDiscount}
+            <div id="payTime">/{payTimes}</div>
+          </S.Price>
         </S.Prices>
 
         <Button
@@ -79,13 +68,15 @@ export const Plano = ({
         />
       </div>
 
-      <S.Discount>
-        <div>
-          <span>70%</span>
-          <span>de desconto</span>
-        </div>
-        <DiscountStar />
-      </S.Discount>
+      {discount ? (
+        <S.Discount>
+          <div>
+            <span>{discount}%</span>
+            <span>de desconto</span>
+          </div>
+          <DiscountStar />
+        </S.Discount>
+      ) : null}
     </S.Container>
   );
 };

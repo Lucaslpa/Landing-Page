@@ -9,8 +9,11 @@ export default {
     PlanoName: 'Plano recomendado',
     accessTime: '1 ano',
     color: 'dark',
-    payTimes: 'por ano',
+    payTimes: 'ano',
     totalValueWithoutDiscount: 40,
+    advantages: ['qualquer vantagem'],
+
+    message: 'menos meu',
   },
 };
 
