@@ -10,6 +10,7 @@ export default {
     reviewText: 'alguma review',
     reviewerDescription: 'review descript',
     reviewerName: 'lUCAS',
+    img: Lucas,
   },
 };
 
