@@ -25,7 +25,7 @@ export const Theme = {
     white: '#FFFFFF',
     black: '#0C0C0C',
     grayDark: '#7B7B7B',
-    grayLight: '#F8F8F8',
+    grayLight: '#E5E5E5',
     orange: '#FF9900',
   },
 };
