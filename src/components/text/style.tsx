@@ -8,15 +8,15 @@ export const Container = styled.div<{ sizeMedium: boolean }>`
 
   ${({ theme, sizeMedium }) => css`
     ${sizeMedium
-      ? media.greaterThan('medium')`
+      ? media.greaterThan('small')`
            max-width: 48.9rem;
            height: auto;
 
       `
-      : media.greaterThan('medium')`
+      : media.greaterThan('small')`
 
      max-width: 60rem;
-     height: 33.5rem;
+     
     
     `}
   `}
@@ -33,7 +33,7 @@ export const TopText = styled.span`
     display: flex;
     justify-content: center;
 
-    ${media.greaterThan('medium')`
+    ${media.greaterThan('small')`
        font-size: ${theme.fonts.big};
        justify-content: flex-start;
        line-height: 3rem;
@@ -51,12 +51,12 @@ export const Title = styled.h2<{ sizeMedium: boolean }>`
     line-height: 3rem;
 
     ${sizeMedium
-      ? media.greaterThan('medium')`
+      ? media.greaterThan('small')`
         font-size: ${theme.fonts.xBig};
         line-height: 3rem;
         text-align: left;
       `
-      : media.greaterThan('medium')`
+      : media.greaterThan('small')`
         font-size: ${theme.fonts.xxxxBig};
         line-height: 6.1rem;
         text-align: left;
@@ -73,12 +73,12 @@ export const Paragraph = styled.p<{ sizeMedium: boolean }>`
     text-align: center;
     line-height: 1.4rem;
     ${sizeMedium
-      ? media.greaterThan('medium')`
+      ? media.greaterThan('small')`
            font-size: calc(${theme.fonts.medium} - 1px);
            line-height: 3rem;
             text-align: left;
       `
-      : media.greaterThan('medium')`
+      : media.greaterThan('small')`
        font-size: ${theme.fonts.medium};
        line-height: 3.7rem;            
        text-align: left;
