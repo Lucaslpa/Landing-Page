@@ -12,7 +12,7 @@ export const Container = styled.div`
     span {
       margin-bottom: 1.3rem;
       color: ${theme.colors.primary};
-      font-family: Inter;
+      font-family: 'Inter';
       font-style: normal;
       font-weight: 500;
       font-size: ${theme.fonts.medium};

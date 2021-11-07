@@ -74,7 +74,7 @@ export const Reviewer = styled.article`
         }
         &::last-child {
           color: ${theme.colors.grayDark};
-          font-family: Inter;
+          font-family: 'Inter';
           font-style: normal;
           font-weight: normal;
           font-size: calc(${theme.fonts.xSmall} + 2px);

@@ -37,7 +37,7 @@ export const Container = styled.div<{ color: 'dark' | 'light' }>`
     height: 59.2rem;
     
     #advantage {
-    font-family: Nunito;
+    font-family: 'Nunito';
     font-weight: bold;
     font-size: 2.2rem;
     line-height: 3.1rem;
@@ -61,7 +61,7 @@ export const AccessTime = styled.span`
   `}
 
   ${media.greaterThan('medium')`
-    font-family: Nunito;
+    font-family: 'Nunito';
     font-style: normal;
     font-weight: bold;
     font-size: 2.2rem;
@@ -80,7 +80,7 @@ export const Plano = styled.h3<{ color: 'dark' | 'light' }>`
     line-height: 2.1rem;
     font-weight: 400;
     ${media.greaterThan('medium')`
-    font-family: Nunito;
+    font-family: 'Nunito';
     font-size: 3rem;
     line-height: 4.8rem;
   `}
@@ -88,7 +88,7 @@ export const Plano = styled.h3<{ color: 'dark' | 'light' }>`
 `;
 
 export const Promotion = styled.h4`
-  font-family: Nunito Sans, sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 `;
 
 export const Prices = styled.div<{ color: 'dark' | 'light' }>`
@@ -106,7 +106,7 @@ export const Prices = styled.div<{ color: 'dark' | 'light' }>`
     }
     #MoneySymbol {
       color: ${theme.colors.secondary};
-      font-family: Nunito Sans;
+      font-family: 'Nunito Sans';
       font-style: normal;
       font-weight: 600;
       font-size: 1.1rem;
@@ -143,7 +143,7 @@ export const Prices = styled.div<{ color: 'dark' | 'light' }>`
 `;
 
 export const Price = styled.h5<{ color: 'dark' | 'light' }>`
-  font-family: Nunito Sans, sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   line-height: 2.7rem;
   font-weight: 800;
   display: flex;
@@ -161,7 +161,7 @@ export const Price = styled.h5<{ color: 'dark' | 'light' }>`
   `}
 
   ${media.greaterThan('medium')`
-      font-family: Nunito Sans;
+      font-family: 'Nunito Sans';
       font-style: normal;
       font-weight: 800;
       font-size: 37px;
@@ -201,7 +201,7 @@ export const Advantages = styled.div<{ color: 'dark' | 'light' }>`
   `}
 `;
 export const Advantage = styled.p<{ color: 'dark' | 'light' }>`
-  font-family: Nunito;
+  font-family: 'Nunito';
   font-size: 9px;
   line-height: 18px;
   font-weight: 400;
@@ -240,7 +240,7 @@ export const Discount = styled.div`
     span {
       &:first-child {
         ${({ theme }) => css`
-          font-family: Nunito Sans;
+          font-family: 'Nunito Sans';
           font-weight: 800;
           font-size: ${theme.fonts.medium};
           color: ${theme.colors.primary};
@@ -264,14 +264,14 @@ export const Discount = styled.div`
   >div {
        span {
          &:first-child {
-           font-family: Nunito Sans;
+           font-family: 'Nunito Sans';
            font-style: normal;
            font-weight: 800;
            font-size: 37px;
           
          }
           &:last-child {
-        font-family: Nunito Sans;
+        font-family: 'Nunito Sans';
         font-style: normal;
         font-weight: 300;
         font-size: 15px;

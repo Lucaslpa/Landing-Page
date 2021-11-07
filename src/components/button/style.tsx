@@ -109,7 +109,7 @@ export const Button = styled.a<button>`
   justify-content: space-evenly;
   box-sizing: border-box;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   cursor: pointer;
   font-family: Inter;
   font-weight: bold;

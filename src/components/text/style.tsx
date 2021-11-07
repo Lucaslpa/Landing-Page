@@ -26,7 +26,7 @@ export const TopText = styled.span`
     color: ${theme.colors.blue};
     font-size: ${theme.fonts.medium};
     font-weight: 700;
-    font-family: Inter;
+    font-family: 'Inter';
     text-align: center;
     line-height: 2.7rem;
     display: flex;
@@ -45,7 +45,7 @@ export const Title = styled.h2<{ sizeMedium: boolean }>`
     color: ${theme.colors.primary};
     font-size: calc(${theme.fonts.small} + 1px);
     font-weight: 600;
-    font-family: Inter;
+    font-family: 'Inter';
     text-align: center;
     line-height: 3rem;
 
@@ -68,7 +68,7 @@ export const Paragraph = styled.p<{ sizeMedium: boolean }>`
     color: ${theme.colors.grayDark};
     font-size: ${theme.fonts.xxSmall};
     font-weight: 400;
-    font-family: Inter;
+    font-family: 'Inter';
     text-align: center;
     line-height: 1.4rem;
     ${sizeMedium
