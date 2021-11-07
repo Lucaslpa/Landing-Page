@@ -2,8 +2,8 @@ import styled, { css } from 'styled-components';
 import media from 'styled-media-query';
 
 export const Container = styled.section`
-  width: 100%;
-  max-width: 37rem;
+  width: 37rem;
+  min-width: 30rem;
   padding: 2.4rem 2.5rem;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.22);
   border-radius: 10px;
