@@ -22,7 +22,7 @@ export const Container = styled.div<{ color: 'dark' | 'light' }>`
   height: 38.7rem;
   width: 100%;
   max-width: 31.9rem;
-  padding: 3rem;
+  padding: 2rem;
 
   #priceAndButton {
     display: flex;
@@ -34,7 +34,7 @@ export const Container = styled.div<{ color: 'dark' | 'light' }>`
 
   ${media.greaterThan('medium')`
     max-width: 47rem;
-    height: 59.2rem;
+    height: 63.2rem;
     
     #advantage {
     font-family: 'Nunito';
@@ -121,8 +121,8 @@ export const Prices = styled.div<{ color: 'dark' | 'light' }>`
       color: ${color === 'dark' ? '#ffffff73' : theme.colors.primary};
     }
     #Message {
-      top: 100%;
-      left: 20%;
+      top: 90%;
+      left: 10%;
     }
   `}
 
@@ -147,6 +147,7 @@ export const Price = styled.h5<{ color: 'dark' | 'light' }>`
   line-height: 2.7rem;
   font-weight: 800;
   display: flex;
+  text-align: right;
   #payTime {
     margin-left: 0.5rem;
     font-family: Nunito;
@@ -161,9 +162,7 @@ export const Price = styled.h5<{ color: 'dark' | 'light' }>`
   `}
 
   ${media.greaterThan('medium')`
-      font-family: 'Nunito Sans';
-      font-style: normal;
-      font-weight: 800;
+     
       font-size: 37px;
       line-height: 65px;
       #payTime {
@@ -196,6 +195,7 @@ export const Advantages = styled.div<{ color: 'dark' | 'light' }>`
 
     ${media.greaterThan('medium')`
       max-width: 41.5rem;
+      height: 32.4rem;
      
   `}
   `}

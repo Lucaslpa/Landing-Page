@@ -11,7 +11,7 @@ export type props = {
   totalValueWithoutDiscount: number;
   payTimes: string;
   advantages: string[];
-  message: string;
+  message?: string;
 };
 
 export const Plano = ({
