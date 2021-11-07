@@ -4,7 +4,8 @@ import media from 'styled-media-query';
 export const Container = styled.div<{ sizeMedium: boolean }>`
   width: 100%;
   max-width: 27.3rem;
-  height: 17.7rem;
+  height: auto;
+
   ${({ theme, sizeMedium }) => css`
     ${sizeMedium
       ? media.greaterThan('medium')`
