@@ -4,11 +4,13 @@ import media from 'styled-media-query';
 export const Container = styled.div`
   display: flex;
   justify-content: center;
+  padding: 7rem 0;
 `;
 
 export const Wrapper = styled.div`
   width: 100%;
   overflow: hidden;
+  padding: 1rem;
   ${({ theme }) => css`
     #titles {
       width: 100%;

@@ -1,5 +1,5 @@
 import * as S from './style';
-import { ReactComponent as Institutes } from 'assets/institutes.svg';
+import Institutes from 'assets/Institutes.png';
 import { Text } from 'components/text';
 import { ReactComponent as MatGroup } from 'assets/MatGroup.svg';
 import { ReactComponent as MatOne } from 'assets/mat1.svg';
@@ -11,7 +11,7 @@ import StudentPNG from 'assets/girl.png';
 export const SectionTwo = () => {
   return (
     <S.Container>
-      <Institutes />
+      <img src={Institutes} alt="Institutos" />
       <div>
         <S.Wrapper>
           <S.Presentation>
@@ -57,6 +57,7 @@ export const SectionTwo = () => {
             colors="dark"
             label="Quero ser aprovado"
             ArrowRight
+            text='Quero ser aprovado'
           />
         </S.Wrapper>
 

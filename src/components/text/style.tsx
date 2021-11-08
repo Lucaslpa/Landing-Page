@@ -54,11 +54,21 @@ export const Title = styled.h2<{ sizeMedium: boolean }>`
       ? media.greaterThan('small')`
         font-size: ${theme.fonts.xBig};
         line-height: 3rem;
-        text-align: left;
+        
       `
       : media.greaterThan('small')`
         font-size: ${theme.fonts.xxxxBig};
         line-height: 6.1rem;
+        
+    `}
+
+    ${sizeMedium
+      ? media.greaterThan('medium')`
+       
+        text-align: left;
+      `
+      : media.greaterThan('small')`
+        
         text-align: left;
     `}
   `}
@@ -76,11 +86,22 @@ export const Paragraph = styled.p<{ sizeMedium: boolean }>`
       ? media.greaterThan('small')`
            font-size: calc(${theme.fonts.medium} - 1px);
            line-height: 3rem;
-            text-align: left;
+          
       `
       : media.greaterThan('small')`
        font-size: ${theme.fonts.medium};
        line-height: 3.7rem;            
+       
+
+    `}
+
+    ${sizeMedium
+      ? media.greaterThan('medium')`
+           
+            text-align: left;
+      `
+      : media.greaterThan('medium')`
+               
        text-align: left;
 
     `}

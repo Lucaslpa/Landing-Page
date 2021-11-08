@@ -36,11 +36,14 @@ const colorsStyles = {
   lightGradient: css`
     ${({ theme }) => css`
       color: ${theme.colors.white};
-
+      transition: 0.3s;
       path {
         fill: ${theme.colors.white};
       }
       background: ${theme.colors.gradient};
+      &:hover {
+        background: linear-gradient(145.09deg, #22bfaa 11.81%, #25cde1 95.89%);
+      }
     `}
   `,
 };

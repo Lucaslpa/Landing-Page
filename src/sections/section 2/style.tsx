@@ -6,7 +6,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-
+  padding-bottom: 3rem;
   > div {
     width: 100%;
     height: auto;

@@ -4,6 +4,7 @@ import media from 'styled-media-query';
 export const Container = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100vh;
 
@@ -14,13 +15,15 @@ export const Container = styled.div`
   padding: 0 1.4rem;
 
   ${media.greaterThan('medium')`
+    justify-content: flex-start;
+
     padding:  10rem !important;
   `}
 `;
 
 export const Wrapper = styled.div`
   width: 100%;
-  max-width: 45.1rem;
+  max-width: 48.1rem;
   height: auto;
   display: flex;
   align-items: center;
@@ -39,6 +42,7 @@ export const Wrapper = styled.div`
         color: ${theme.colors.secondary};
         line-height: 26px;
         margin-top: 2.3rem;
+        text-align: center;
       }
     }
 
@@ -72,15 +76,17 @@ export const Wrapper = styled.div`
     }
   `}
   ${media.greaterThan('medium')`
+   max-width: 50.1rem;
   align-items: flex-start;
       div {
           flex-direction: row;
           align-items: center;
          span {
-              margin-left: 1.4rem;
+              
               margin-top: 0;
               font-size: 2rem;
               width: 100%;
+             
          }
       }
        h1 {
