@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import media from 'styled-media-query';
 
-export const Container = styled.div`
+export const Container = styled.nav`
   width: 100%;
   max-width: 23.3rem;
   height: auto;
