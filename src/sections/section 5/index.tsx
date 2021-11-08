@@ -32,20 +32,27 @@ export const SectionFive = () => {
   return (
     <S.Container>
       <S.Wrapper>
-        <ArrowLeft id="arrowLeft" />
-        <S.Content>
-          {reviews.map((review) => (
-            <Review
-              img={review.img}
-              reviewText={review.text}
-              reviewerDescription={review.reviewerDescription}
-              reviewerName={review.reviewerName}
-            />
-          ))}
-        </S.Content>
-        <ArrowRight id="arrowRight" />
+        <div id="titles">
+          <span>DEPOIMENTOS</span>
+          <span>Recomendados por quem é expert no assunto</span>
+        </div>
 
-        <LeftRight id="arrowLeftRight" />
+        <S.Reviews>
+          <ArrowLeft id="arrowLeft" />
+          <S.Content>
+            {reviews.map((review) => (
+              <Review
+                img={review.img}
+                reviewText={review.text}
+                reviewerDescription={review.reviewerDescription}
+                reviewerName={review.reviewerName}
+              />
+            ))}
+          </S.Content>
+          <ArrowRight id="arrowRight" />
+
+          <LeftRight id="arrowLeftRight" />
+        </S.Reviews>
       </S.Wrapper>
     </S.Container>
   );
