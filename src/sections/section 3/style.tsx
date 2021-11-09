@@ -23,7 +23,6 @@ export const Element = styled.div<{ side: 'left' | 'right' }>`
   flex-direction: column;
   align-items: center;
   height: auto;
-  margin: 3rem 0;
 
   ${({ side }) => css`
     ${media.greaterThan('large')`
@@ -32,7 +31,9 @@ export const Element = styled.div<{ side: 'left' | 'right' }>`
   `}
     margin: 0;
   `}
-
+  > div {
+    margin: 4rem 0;
+  }
   > img {
     width: 100%;
     margin-top: 3rem;

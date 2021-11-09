@@ -72,7 +72,7 @@ export const Infos = styled.div`
 
     p {
       font-family: 'Inter';
-      font-size: ${theme.fonts.xxSmall};
+      font-size: calc(${theme.fonts.xxSmall} - 1px);
       font-style: normal;
       font-weight: 400;
 

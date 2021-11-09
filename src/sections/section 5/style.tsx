@@ -4,7 +4,8 @@ import media from 'styled-media-query';
 export const Container = styled.div`
   display: flex;
   justify-content: center;
-  padding: 7rem 0;
+  padding: 5rem 0 7rem 0;
+  ${media.greaterThan('medium')`padding-top: 10rem`}
 `;
 
 export const Wrapper = styled.div`

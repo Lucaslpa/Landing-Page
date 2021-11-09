@@ -6,7 +6,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   background-color: white;
-  padding: 6rem 0;
+  padding-top: 4rem;
 `;
 
 export const Wrapper = styled.div`
