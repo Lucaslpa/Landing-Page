@@ -1,12 +1,25 @@
 import styled, { css } from 'styled-components';
 import media from 'styled-media-query';
+import { ReactComponent as background } from 'assets/Rectangle 8.svg';
+
+export const Background = styled(background)`
+  position: absolute;
+  left: 1%;
+  width: 80%;
+  max-width: 68rem;
+  ${media.lessThan('medium')`
+  
+   display: none;
+  `}
+`;
 
 export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: 105vh;
+  position: relative;
 
   ${({ theme }) => css`
     background-color: ${theme.colors.primary};
@@ -17,7 +30,7 @@ export const Container = styled.div`
   ${media.greaterThan('medium')`
     justify-content: flex-start;
 
-    padding:  10rem !important;
+    padding: 10rem 15rem !important;
   `}
 `;
 
@@ -28,6 +41,7 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  z-index: 20;
   ${({ theme }) => css`
     div {
       display: flex;
@@ -92,9 +106,12 @@ export const Wrapper = styled.div`
        h1 {
            text-align: left;
        }
-      p {
+      p {  font-weight: normal;
           text-align: left; 
           margin-bottom: 3.2rem;
+          font-size: 1.9rem;
+          letter-spacing: 0.38px;
+          line-height: 29px;
       }
-  `}
+  `};
 `;

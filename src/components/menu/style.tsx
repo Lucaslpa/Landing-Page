@@ -3,8 +3,8 @@ import media from 'styled-media-query';
 
 export const Menu = styled.menu`
   width: 100%;
-  height: 7rem;
-
+  height: 100%;
+  z-index: 30;
   padding: 2rem;
   display: flex;
   align-items: center;

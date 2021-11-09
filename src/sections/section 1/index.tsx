@@ -1,6 +1,8 @@
 import * as S from './style';
 import { ReactComponent as Robot } from 'assets/robot.svg';
 import { Button } from 'components/button';
+import { BoyWithTablet } from 'components/boyWithTablet';
+
 
 export const SectionOne = () => {
   return (
@@ -28,6 +30,9 @@ export const SectionOne = () => {
           size="xBig"
         />
       </S.Wrapper>
+
+      <S.Background />
+      <BoyWithTablet />
     </S.Container>
   );
 };
