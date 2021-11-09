@@ -62,15 +62,10 @@ export const Title = styled.h2<{ sizeMedium: boolean }>`
         
     `}
 
-    ${sizeMedium
-      ? media.greaterThan('900px')`
+    ${media.greaterThan('900px')`
        
         text-align: left;
-      `
-      : media.greaterThan('small')`
-        
-        text-align: left;
-    `}
+      `}
   `}
 `;
 export const Paragraph = styled.p<{ sizeMedium: boolean }>`
