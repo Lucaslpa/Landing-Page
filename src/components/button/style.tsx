@@ -13,6 +13,9 @@ const colorsStyles = {
       background-color: ${theme.colors.primary};
 
       fill: ${theme.colors.white};
+      path {
+        fill: ${theme.colors.white};
+      }
 
       &:hover {
         background-color: ${theme.colors.primaryLight};
@@ -25,6 +28,9 @@ const colorsStyles = {
       background-color: ${theme.colors.secondary};
 
       fill: ${theme.colors.primary};
+      path {
+        fill: ${theme.colors.primary};
+      }
 
       &:hover {
         background-color: ${theme.colors.secondaryDark};
@@ -38,6 +44,10 @@ const colorsStyles = {
       transition: 0.3s;
 
       fill: ${theme.colors.white};
+
+      path {
+        fill: ${theme.colors.white};
+      }
 
       background: ${theme.colors.gradient};
       &:hover {
