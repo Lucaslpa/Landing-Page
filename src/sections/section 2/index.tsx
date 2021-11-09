@@ -60,9 +60,8 @@ export const SectionTwo = () => {
             text="Quero ser aprovado"
           />
         </S.Wrapper>
-
-        <img src={StudentPNG} alt="jovem estudante" />
       </div>
+      <img id="studentIMG" src={StudentPNG} alt="jovem estudante" />
     </S.Container>
   );
 };

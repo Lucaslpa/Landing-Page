@@ -3,18 +3,21 @@ import media from 'styled-media-query';
 
 export const Container = styled.div`
   width: 100%;
+  height: auto;
   display: flex;
+  padding: 1rem;
   justify-content: center;
   background-color: white;
-  padding-top: 4rem;
 `;
 
 export const Wrapper = styled.div`
   width: 100%;
   display: flex;
-  max-width: 100rem;
+  max-width: 117rem;
   flex-direction: column;
   align-items: center;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
   ${({ theme }) => css`
     #titles {
       width: 100%;
@@ -61,11 +64,12 @@ export const Wrapper = styled.div`
         }
         &:last-child {
          font-family: Nunito;
-         font-size: 2.2rem;
-         font-weight: 700;
-         line-height: 3rem;
+         font-style: normal;
+         font-weight: bold;
+         font-size: 44.8277px;
+         line-height: 61px;
          text-align: left;
-          color: ${theme.colors.primary};
+         color: ${theme.colors.primary};
         }
       }
     }
@@ -77,11 +81,11 @@ export const Content = styled.div`
   > div {
     margin: 2.3rem 0;
   }
-
+  justify-content: space-between;
   ${media.greaterThan('1136px')`
    display: flex; 
    width: 100%; 
-   justify-content: space-between;
+   justify-content: space-around;
    > div {
     margin: 0;
 

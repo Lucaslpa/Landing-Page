@@ -16,7 +16,7 @@ export const GoTop = styled(GoToTop)`
 export const Container = styled.div`
   display: flex;
   justify-content: center;
-  padding: 5rem 0;
+  padding: 1rem;
   height: auto;
 
   ${({ theme }) => css`
@@ -34,10 +34,11 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  width: 100%;
+  max-width: 117rem;
+  padding: 6rem 0;
   ${media.greaterThan('1000px')`
-     width: 100%; 
-     max-width: 100rem;
+     
 
   `}
 `;

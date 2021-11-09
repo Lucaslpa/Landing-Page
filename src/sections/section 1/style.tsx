@@ -6,6 +6,7 @@ export const Background = styled(background)`
   position: absolute;
   left: 1%;
   width: 80%;
+  top: -10%;
   max-width: 68rem;
   ${media.lessThan('medium')`
   
@@ -15,33 +16,40 @@ export const Background = styled(background)`
 
 export const Container = styled.div`
   display: flex;
-  align-items: center;
   justify-content: center;
   width: 100%;
-  height: 105vh;
+  height: 100vh;
   position: relative;
 
   ${({ theme }) => css`
     background-color: ${theme.colors.primary};
   `}
 
-  padding: 0 1.4rem;
-
-  ${media.greaterThan('medium')`
-    justify-content: flex-start;
-
-    padding: 10rem 15rem !important;
-  `}
+  padding: 2rem;
 `;
 
 export const Wrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  max-width: 117rem;
+  z-index: 20;
+  justify-content: center;
+  ${media.greaterThan('medium')`
+    justify-content: flex-start;
+    padding: 0;
+  `}
+`;
+
+export const Content = styled.div`
   width: 100%;
   max-width: 48.1rem;
   height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
-  z-index: 20;
+
   ${({ theme }) => css`
     div {
       display: flex;

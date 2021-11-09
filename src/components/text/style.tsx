@@ -33,7 +33,7 @@ export const TopText = styled.span`
     display: flex;
     justify-content: center;
 
-    ${media.greaterThan('small')`
+    ${media.greaterThan('900px')`
        font-size: ${theme.fonts.big};
        justify-content: flex-start;
        line-height: 3rem;
@@ -63,7 +63,7 @@ export const Title = styled.h2<{ sizeMedium: boolean }>`
     `}
 
     ${sizeMedium
-      ? media.greaterThan('medium')`
+      ? media.greaterThan('900px')`
        
         text-align: left;
       `

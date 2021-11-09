@@ -7,29 +7,30 @@ export const SectionOne = () => {
   return (
     <S.Container id="Home">
       <S.Wrapper>
-        <div>
-          <Robot />
-          <span>Seja aprovado no Enem e em Vestibulares :)</span>
-        </div>
+        <S.Content>
+          <div>
+            <Robot />
+            <span>Seja aprovado no Enem e em Vestibulares :)</span>
+          </div>
 
-        <h1>
-          Você escolhe o que aprender <span id="dot">.</span>
-        </h1>
+          <h1>
+            Você escolhe o que aprender <span id="dot">.</span>
+          </h1>
 
-        <p>
-          Aqui você terá toda assistência que precisa com materiais desenvolvido
-          por <em>mestres e doutores em matemática</em>
-        </p>
+          <p>
+            Aqui você terá toda assistência que precisa com materiais
+            desenvolvido por <em>mestres e doutores em matemática</em>
+          </p>
 
-        <Button
-          text="Veja nossos planos"
-          ArrowRight
-          label="Veja nossos planos"
-          colors="light"
-          size="xBig"
-        />
+          <Button
+            text="Veja nossos planos"
+            ArrowRight
+            label="Veja nossos planos"
+            colors="light"
+            size="xBig"
+          />
+        </S.Content>
       </S.Wrapper>
-
       <S.Background />
       <BoyWithTablet />
     </S.Container>

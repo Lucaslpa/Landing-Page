@@ -6,7 +6,6 @@ import { SectionFour } from 'sections/section 4';
 import { SectionFive } from 'sections/section 5';
 import { SectionSix } from 'sections/section 6';
 import { Footer } from 'sections/footer';
-import { useState } from 'react';
 
 function App() {
   return (

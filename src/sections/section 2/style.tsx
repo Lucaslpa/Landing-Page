@@ -6,26 +6,31 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  padding-bottom: 3rem;
+  padding: 2rem;
+  position: relative;
+  width: 100%;
+  #studentIMG {
+    width: 100%;
+    max-width: 59.1rem;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+  }
+
   > div {
     width: 100%;
+    max-width: 117rem;
     height: auto;
     display: flex;
-    justify-content: center;
+  }
 
-    > img {
-      width: 50%;
-      max-width: 59.1rem;
-      height: 100%;
-      max-height: auto;
-      display: none;
-    }
-    ${media.greaterThan('large')`
-     > img {
+  ${media.greaterThan('large')`
+     #studentIMG {
          display: block;
      }
   `}
-  }
 `;
 
 export const Wrapper = styled.div`
@@ -38,6 +43,7 @@ export const Wrapper = styled.div`
   align-items: center;
   height: auto;
   width: 100%;
+  max-width: 117rem;
   margin-top: 5rem;
   padding: 0 1rem;
   padding-bottom: 4rem;
@@ -75,6 +81,7 @@ export const Presentation = styled.div`
 `;
 
 export const Content = styled.div`
+  width: 100%;
   height: 46.3rem;
   display: flex;
   flex-direction: column;
@@ -93,6 +100,7 @@ export const Element = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: auto;
 
   ${media.greaterThan('medium')`
     svg {
