@@ -12,6 +12,7 @@ describe.only('Button', () => {
     expect(button).toHaveStyleRule('font-size', '1.5rem');
     expect(button).toHaveStyleRule('max-height', '4.3rem');
     expect(button).toHaveStyleRule('max-width', '13.3rem');
+    expect(button).toMatchSnapshot();
   });
 
   it('Should render medium button dark', () => {
@@ -23,6 +24,8 @@ describe.only('Button', () => {
     expect(button).toHaveStyleRule('font-size', '1.7rem');
     expect(button).toHaveStyleRule('max-height', '6rem');
     expect(button).toHaveStyleRule('max-width', '20rem');
+
+    expect(button).toMatchSnapshot();
   });
 
   it('Should render medium button ligh', () => {
@@ -34,6 +37,7 @@ describe.only('Button', () => {
     expect(button).toHaveStyleRule('font-size', '1.7rem');
     expect(button).toHaveStyleRule('max-height', '6rem');
     expect(button).toHaveStyleRule('max-width', '20rem');
+    expect(button).toMatchSnapshot();
   });
 
   it('Should render big button lightGradient', () => {
@@ -48,6 +52,8 @@ describe.only('Button', () => {
     expect(button).toHaveStyleRule('font-size', '1.7rem');
     expect(button).toHaveStyleRule('max-height', '6rem');
     expect(button).toHaveStyleRule('max-width', '31.3rem');
+
+    expect(button).toMatchSnapshot();
   });
   it('Should render xBig button ', () => {
     render(<Button size="xBig" colors="lightGradient" label="button" />);
@@ -55,15 +61,18 @@ describe.only('Button', () => {
     expect(button).toHaveStyleRule('font-size', '1.7rem');
     expect(button).toHaveStyleRule('max-height', '5.9rem');
     expect(button).toHaveStyleRule('max-width', '38rem');
+    expect(button).toMatchSnapshot();
   });
   it('Should render button with arrow icon', () => {
     render(<Button size="small" colors="dark" label="button" ArrowRight />);
     const arrow = screen.getByLabelText(/arrow/gi);
     expect(arrow).toBeInTheDocument();
+    expect(arrow).toMatchSnapshot();
   });
   it('Should render button without arrow icon', () => {
     render(<Button size="small" colors="dark" label="button" />);
     const arrow = screen.queryByLabelText(/arrow/gi);
     expect(arrow).not.toBeInTheDocument();
+    expect(arrow).toMatchSnapshot();
   });
 });

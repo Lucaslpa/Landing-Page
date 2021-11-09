@@ -1,30 +1,55 @@
 import styled, { css } from 'styled-components';
 import media from 'styled-media-query';
+import { ReactComponent as background } from 'assets/Rectangle 8.svg';
+
+export const Background = styled(background)`
+  position: absolute;
+  left: 1%;
+  width: 80%;
+  top: -10%;
+  max-width: 68rem;
+  ${media.lessThan('medium')`
+  
+   display: none;
+  `}
+`;
 
 export const Container = styled.div`
   display: flex;
-  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100vh;
+  position: relative;
 
   ${({ theme }) => css`
     background-color: ${theme.colors.primary};
   `}
 
-  padding: 0 1.4rem;
-
-  ${media.greaterThan('medium')`
-    padding:  10rem !important;
-  `}
+  padding: 2rem;
 `;
 
 export const Wrapper = styled.div`
   width: 100%;
-  max-width: 45.1rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  max-width: 117rem;
+  z-index: 20;
+  justify-content: center;
+  ${media.greaterThan('medium')`
+    justify-content: flex-start;
+    padding: 0;
+  `}
+`;
+
+export const Content = styled.div`
+  width: 100%;
+  max-width: 48.1rem;
   height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
+
   ${({ theme }) => css`
     div {
       display: flex;
@@ -39,6 +64,7 @@ export const Wrapper = styled.div`
         color: ${theme.colors.secondary};
         line-height: 26px;
         margin-top: 2.3rem;
+        text-align: center;
       }
     }
 
@@ -72,23 +98,28 @@ export const Wrapper = styled.div`
     }
   `}
   ${media.greaterThan('medium')`
+   max-width: 50.1rem;
   align-items: flex-start;
       div {
           flex-direction: row;
           align-items: center;
          span {
-              margin-left: 1.4rem;
+              
               margin-top: 0;
               font-size: 2rem;
               width: 100%;
+             
          }
       }
        h1 {
            text-align: left;
        }
-      p {
+      p {  font-weight: normal;
           text-align: left; 
           margin-bottom: 3.2rem;
+          font-size: 1.9rem;
+          letter-spacing: 0.38px;
+          line-height: 29px;
       }
-  `}
+  `};
 `;

@@ -9,7 +9,7 @@ export type props = {
 
 export const Text = ({ title, text, topText, sizeMedium = false }: props) => {
   return (
-    <S.Container data-testid="Container" sizeMedium={sizeMedium}>
+    <S.Container data-testid="container" sizeMedium={sizeMedium}>
       {topText ? <S.TopText>{topText}</S.TopText> : null}
       <S.Title sizeMedium={sizeMedium}>{title}</S.Title>
       <S.Paragraph data-testid="paragraph" sizeMedium={sizeMedium}>

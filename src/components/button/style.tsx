@@ -11,9 +11,12 @@ const colorsStyles = {
     ${({ theme }) => css`
       color: ${theme.colors.white};
       background-color: ${theme.colors.primary};
+
+      fill: ${theme.colors.white};
       path {
         fill: ${theme.colors.white};
       }
+
       &:hover {
         background-color: ${theme.colors.primaryLight};
       }
@@ -24,9 +27,11 @@ const colorsStyles = {
       color: ${theme.colors.primary};
       background-color: ${theme.colors.secondary};
 
+      fill: ${theme.colors.primary};
       path {
         fill: ${theme.colors.primary};
       }
+
       &:hover {
         background-color: ${theme.colors.secondaryDark};
       }
@@ -36,11 +41,18 @@ const colorsStyles = {
   lightGradient: css`
     ${({ theme }) => css`
       color: ${theme.colors.white};
+      transition: 0.3s;
+
+      fill: ${theme.colors.white};
 
       path {
         fill: ${theme.colors.white};
       }
+
       background: ${theme.colors.gradient};
+      &:hover {
+        background: linear-gradient(145.09deg, #22bfaa 11.81%, #25cde1 95.89%);
+      }
     `}
   `,
 };

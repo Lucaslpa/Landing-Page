@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Links Should render all links 1`] = `
+Array [
+  @media (min-width:768px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+<a
+    href="/"
+  >
+    link 1
+  </a>,
+  @media (min-width:768px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+<a
+    href="/"
+  >
+    link 2
+  </a>,
+]
+`;
+
+exports[`Links Should render title 1`] = `
+@media (min-width:768px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+<span>
+  pastel
+</span>
+`;

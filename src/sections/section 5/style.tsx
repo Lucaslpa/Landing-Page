@@ -4,15 +4,22 @@ import media from 'styled-media-query';
 export const Container = styled.div`
   display: flex;
   justify-content: center;
+  width: 100%;
+  height: auto;
+
+  padding: 1rem;
+  ${media.greaterThan('medium')`padding-top: 10rem`}
 `;
 
 export const Wrapper = styled.div`
   width: 100%;
+  max-width: 117rem;
   overflow: hidden;
+  padding: 1rem 0;
   ${({ theme }) => css`
     #titles {
       width: 100%;
-      max-width: 100%;
+
       display: flex;
       flex-direction: column;
       margin-bottom: 3.4rem;
@@ -39,6 +46,8 @@ export const Wrapper = styled.div`
     }
 
     ${media.greaterThan('1136px')`
+      padding: 2rem 0;
+      padding-bottom: 15rem;
         #titles {
       margin-bottom: 3.4rem;
       margin-left: 5%;

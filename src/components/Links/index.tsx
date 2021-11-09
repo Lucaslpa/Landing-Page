@@ -11,7 +11,9 @@ export const Links = ({ links, title }: props) => {
       <span>{title}</span>
 
       {links.map((link) => (
-        <a href="/">{link}</a>
+        <a href="/" key={link}>
+          {link}
+        </a>
       ))}
     </S.Container>
   );

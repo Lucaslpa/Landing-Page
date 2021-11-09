@@ -72,15 +72,17 @@ export const Infos = styled.div`
 
     p {
       font-family: 'Inter';
-      font-size: ${theme.fonts.small};
+      font-size: calc(${theme.fonts.xxSmall} - 1px);
       font-style: normal;
       font-weight: 400;
-      line-height: 1.5rem;
+
       letter-spacing: 0.3799999952316284px;
       text-align: center;
       color: ${theme.colors.white};
       margin-top: 0.9rem;
       margin-bottom: 4.8rem;
+
+      line-height: 20px;
     }
     ${media.greaterThan('900px')`
      align-items: flex-start;

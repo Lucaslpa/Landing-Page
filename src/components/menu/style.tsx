@@ -1,16 +1,39 @@
 import styled, { css } from 'styled-components';
 import media from 'styled-media-query';
 
-export const Menu = styled.menu`
-  width: 100%;
-  height: 7rem;
+const fixedMenu = css`
+  position: fixed;
+  top: 0;
+`;
 
+type menu = {
+  hidden: boolean;
+  fixed: boolean;
+};
+
+export const Menu = styled.menu<menu>`
+  width: 100%;
+  height: 100%;
+  max-height: 7rem;
+  z-index: 30;
   padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
+  transition: 0.3s;
 
+  background-color: white;
+
+  ${({ fixed, hidden }) => css`
+    ${hidden
+      ? css`
+          opacity: 0;
+          pointer-events: none;
+        `
+      : null};
+
+    ${fixed ? fixedMenu : null}
+  `}
   svg {
     width: 2.1rem;
 
@@ -96,7 +119,7 @@ export const MenuNav = styled.nav<{ hidden: boolean }>`
             pointer-events: none;
           `
     }
-    top: 100%; 
+    top: 99%; 
     left: 0%;
     right: 0;
     height: 85vh;
