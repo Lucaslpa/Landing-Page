@@ -50,7 +50,7 @@ exports[`Text Should match snapshots 1`] = `
   }
 }
 
-@media (min-width:450px) {
+@media (min-width:900px) {
   .c1 {
     font-size: 2.2rem;
     -webkit-box-pack: start;
@@ -178,7 +178,7 @@ exports[`Text Should match snapshots with sizeMedium 1`] = `
   }
 }
 
-@media (min-width:450px) {
+@media (min-width:900px) {
   .c1 {
     font-size: 2.2rem;
     -webkit-box-pack: start;
@@ -196,7 +196,7 @@ exports[`Text Should match snapshots with sizeMedium 1`] = `
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:900px) {
   .c2 {
     text-align: left;
   }
@@ -240,7 +240,7 @@ exports[`Text Should match snapshots with sizeMedium 1`] = `
 
 exports[`Text Should match snapshots with sizeMedium 2`] = `
 <h2
-  class="sc-dkPtRN fPcCZM"
+  class="sc-dkPtRN iCuhNM"
 >
   meme
 </h2>

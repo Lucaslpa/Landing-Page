@@ -92,6 +92,10 @@ exports[`Menu Should  hidden navigator when in less 768px screen 1`] = `
   border-radius: 0.6rem;
 }
 
+.c1 path {
+  fill: #FFFFFF;
+}
+
 .c1:hover {
   background-color: #27216e;
 }
@@ -283,6 +287,10 @@ exports[`Menu Should  show navigator when in less 768px and menu open was active
   font-size: 1.5rem;
   text-align: center;
   border-radius: 0.6rem;
+}
+
+.c1 path {
+  fill: #FFFFFF;
 }
 
 .c1:hover {

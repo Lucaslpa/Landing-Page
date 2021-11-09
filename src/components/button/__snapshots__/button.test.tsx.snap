@@ -37,6 +37,10 @@ exports[`Button Should render big button lightGradient 1`] = `
   border-radius: 0.6rem;
 }
 
+.c0 path {
+  fill: #FFFFFF;
+}
+
 .c0:hover {
   background: linear-gradient(145.09deg,#22bfaa 11.81%,#25cde1 95.89%);
 }
@@ -117,6 +121,10 @@ exports[`Button Should render medium button dark 1`] = `
   border-radius: 0.6rem;
 }
 
+.c0 path {
+  fill: #FFFFFF;
+}
+
 .c0:hover {
   background-color: #27216e;
 }
@@ -177,6 +185,10 @@ exports[`Button Should render medium button ligh 1`] = `
   font-size: 1.7rem;
   text-align: center;
   border-radius: 0.6rem;
+}
+
+.c0 path {
+  fill: #252160;
 }
 
 .c0:hover {
@@ -241,6 +253,10 @@ exports[`Button Should render small button dark 1`] = `
   border-radius: 0.6rem;
 }
 
+.c0 path {
+  fill: #FFFFFF;
+}
+
 .c0:hover {
   background-color: #27216e;
 }
@@ -291,6 +307,10 @@ exports[`Button Should render xBig button  1`] = `
   font-size: 1.7rem;
   text-align: center;
   border-radius: 0.6rem;
+}
+
+.c0 path {
+  fill: #FFFFFF;
 }
 
 .c0:hover {

@@ -7,6 +7,7 @@ export const Container = styled.div`
   align-items: center;
   overflow: hidden;
   padding: 2rem;
+  padding-bottom: 3rem;
   position: relative;
   width: 100%;
   #studentIMG {
@@ -45,8 +46,7 @@ export const Wrapper = styled.div`
   width: 100%;
   max-width: 117rem;
   margin-top: 5rem;
-  padding: 0 1rem;
-  padding-bottom: 4rem;
+  padding: 0 1rem 6rem 1rem;
 
   ${media.greaterThan('medium')`
    align-items: flex-start; 

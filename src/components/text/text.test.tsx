@@ -47,7 +47,7 @@ describe('Text', () => {
     });
 
     expect(heading).toHaveStyleRule('text-align', 'left', {
-      media: '(min-width: 768px)',
+      media: '(min-width: 900px)',
     });
 
     expect(paragraph).toHaveStyleRule('line-height', '3rem', {

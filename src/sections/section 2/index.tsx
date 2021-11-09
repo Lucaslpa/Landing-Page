@@ -53,7 +53,7 @@ export const SectionTwo = () => {
           </S.Presentation>
 
           <Button
-            size="xBig"
+            size="big"
             colors="dark"
             label="Quero ser aprovado"
             ArrowRight
