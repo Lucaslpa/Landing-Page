@@ -10,7 +10,7 @@ import StudentPNG from 'assets/girl.png';
 
 export const SectionTwo = () => {
   return (
-    <S.Container>
+    <S.Container id="quemSomos">
       <img src={Institutes} alt="Institutos" />
       <div>
         <S.Wrapper>
@@ -57,7 +57,7 @@ export const SectionTwo = () => {
             colors="dark"
             label="Quero ser aprovado"
             ArrowRight
-            text='Quero ser aprovado'
+            text="Quero ser aprovado"
           />
         </S.Wrapper>
 

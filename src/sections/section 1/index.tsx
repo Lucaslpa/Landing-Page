@@ -3,10 +3,9 @@ import { ReactComponent as Robot } from 'assets/robot.svg';
 import { Button } from 'components/button';
 import { BoyWithTablet } from 'components/boyWithTablet';
 
-
 export const SectionOne = () => {
   return (
-    <S.Container>
+    <S.Container id="Home">
       <S.Wrapper>
         <div>
           <Robot />

@@ -46,6 +46,7 @@ export const SectionFive = () => {
                 reviewText={review.text}
                 reviewerDescription={review.reviewerDescription}
                 reviewerName={review.reviewerName}
+                key={review.reviewerDescription}
               />
             ))}
           </S.Content>

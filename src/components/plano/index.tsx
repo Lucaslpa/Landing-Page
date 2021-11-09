@@ -2,6 +2,7 @@ import * as S from './style';
 import { ReactComponent as Check } from 'assets/check.svg';
 import { Button } from 'components/button';
 import { ReactComponent as DiscountStar } from 'assets/BigStar.svg';
+import { useRef } from 'react';
 
 export type props = {
   color: 'light' | 'dark';
@@ -37,8 +38,8 @@ export const Plano = ({
       <S.Plano color={color}>{PlanoName}</S.Plano>
       <span id="advantage">vantagens</span>
       <S.Advantages color={color}>
-        {advantages.map((advantage) => (
-          <div>
+        {advantages.map((advantage, index) => (
+          <div key={index}>
             <Check />
 
             <S.Advantage color={color}>{advantage}</S.Advantage>

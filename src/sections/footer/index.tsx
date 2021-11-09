@@ -8,8 +8,12 @@ import { Links } from 'components/Links';
 import PlatformsColumn from 'assets/PlatformsColumn.png';
 
 export const Footer = () => {
+  function handleScrollToHome() {
+    const Home = document.querySelector('#Home');
+    Home?.scrollIntoView({ behavior: 'smooth' });
+  }
   return (
-    <S.Container>
+    <S.Container id="faleConosco">
       <S.Wrapper>
         <S.Content>
           <S.LogoAndPlatforms>
@@ -56,7 +60,7 @@ export const Footer = () => {
           </S.CopyRight>
         </S.SocialMediaAndCopyright>
 
-        <S.GoTop id="goToTop" />
+        <S.GoTop id="goToTop" onClick={handleScrollToHome} />
       </S.Wrapper>
     </S.Container>
   );
