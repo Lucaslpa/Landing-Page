@@ -68,7 +68,7 @@ exports[`Text Should match snapshots 1`] = `
   }
 }
 
-@media (min-width:450px) {
+@media (min-width:900px) {
   .c2 {
     text-align: left;
   }
@@ -112,7 +112,7 @@ exports[`Text Should match snapshots 1`] = `
 
 exports[`Text Should match snapshots 2`] = `
 <h2
-  class="sc-dkPtRN eqVBHP"
+  class="sc-dkPtRN cKibWv"
 >
   meme
 </h2>
