@@ -9,6 +9,7 @@ describe.only('Menu', () => {
     expect(navigator).toHaveStyleRule('opacity', '0', {
       media: '(max-width: 768px)',
     });
+    expect(navigator).toMatchSnapshot();
   });
 
   it('Should  show navigator when in less 768px and menu open was active', () => {
@@ -24,5 +25,7 @@ describe.only('Menu', () => {
     expect(navigator).toHaveStyleRule('opacity', '1', {
       media: '(max-width: 768px)',
     });
+
+    expect(navigator).toMatchSnapshot();
   });
 });

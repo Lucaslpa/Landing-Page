@@ -6,7 +6,7 @@ export const Container = styled.div<{ sizeMedium: boolean }>`
   max-width: 27.3rem;
   height: auto;
 
-  ${({ theme, sizeMedium }) => css`
+  ${({ sizeMedium }) => css`
     ${sizeMedium
       ? media.greaterThan('small')`
            max-width: 48.9rem;

@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Review Should render review text 1`] = `
+.c0 {
+  width: 100%;
+  max-width: 32rem;
+  height: auto;
+  word-wrap: break-word;
+  line-height: 2.2rem;
+  font-size: 1.3rem;
+  color: #7b7b7b;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+
+@media (min-width:768px) {
+
+}
+
+<p
+  class="c0"
+>
+  revietext
+</p>
+`;
+
+exports[`Review Should render reviewer description 1`] = `
+@media (min-width:768px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+<span>
+  reviewer description
+</span>
+`;
+
+exports[`Review Should render reviewer name 1`] = `
+@media (min-width:768px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+<span>
+  reviewer
+</span>
+`;

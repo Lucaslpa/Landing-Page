@@ -1,0 +1,256 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text Should match snapshots 1`] = `
+.c0 {
+  width: 100%;
+  max-width: 27.3rem;
+  height: auto;
+}
+
+.c1 {
+  color: #32B5FF;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Inter';
+  text-align: center;
+  line-height: 2.7rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c2 {
+  margin-top: 0.8rem;
+  color: #252160;
+  font-size: calc(1.7rem + 1px);
+  font-weight: 600;
+  font-family: 'Inter';
+  text-align: center;
+  line-height: 3rem;
+}
+
+.c3 {
+  margin-top: 0.8rem;
+  color: #7B7B7B;
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: 'Inter';
+  text-align: center;
+  line-height: 1.4rem;
+}
+
+@media (min-width:450px) {
+  .c0 {
+    max-width: 60rem;
+  }
+}
+
+@media (min-width:450px) {
+  .c1 {
+    font-size: 2.2rem;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    line-height: 3rem;
+  }
+}
+
+@media (min-width:450px) {
+  .c2 {
+    font-size: 4.4rem;
+    line-height: 6.1rem;
+  }
+}
+
+@media (min-width:450px) {
+  .c2 {
+    text-align: left;
+  }
+}
+
+@media (min-width:450px) {
+  .c3 {
+    font-size: 2rem;
+    line-height: 3.7rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    text-align: left;
+  }
+}
+
+<div
+  class="c0"
+  data-testid="container"
+>
+  <span
+    class="c1"
+  >
+    TopText
+  </span>
+  <h2
+    class="c2"
+  >
+    meme
+  </h2>
+  <p
+    class="c3"
+    data-testid="paragraph"
+  >
+    meme
+  </p>
+</div>
+`;
+
+exports[`Text Should match snapshots 2`] = `
+<h2
+  class="sc-dkPtRN eqVBHP"
+>
+  meme
+</h2>
+`;
+
+exports[`Text Should match snapshots 3`] = `
+<p
+  class="sc-hKwDye hzIELy"
+  data-testid="paragraph"
+>
+  meme
+</p>
+`;
+
+exports[`Text Should match snapshots with sizeMedium 1`] = `
+.c0 {
+  width: 100%;
+  max-width: 27.3rem;
+  height: auto;
+}
+
+.c1 {
+  color: #32B5FF;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Inter';
+  text-align: center;
+  line-height: 2.7rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c2 {
+  margin-top: 0.8rem;
+  color: #252160;
+  font-size: calc(1.7rem + 1px);
+  font-weight: 600;
+  font-family: 'Inter';
+  text-align: center;
+  line-height: 3rem;
+}
+
+.c3 {
+  margin-top: 0.8rem;
+  color: #7B7B7B;
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: 'Inter';
+  text-align: center;
+  line-height: 1.4rem;
+}
+
+@media (min-width:450px) {
+  .c0 {
+    max-width: 48.9rem;
+    height: auto;
+  }
+}
+
+@media (min-width:450px) {
+  .c1 {
+    font-size: 2.2rem;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    line-height: 3rem;
+  }
+}
+
+@media (min-width:450px) {
+  .c2 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    text-align: left;
+  }
+}
+
+@media (min-width:450px) {
+  .c3 {
+    font-size: calc(2rem - 1px);
+    line-height: 3rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    text-align: left;
+  }
+}
+
+<div
+  class="c0"
+  data-testid="container"
+>
+  <span
+    class="c1"
+  >
+    TopText
+  </span>
+  <h2
+    class="c2"
+  >
+    meme
+  </h2>
+  <p
+    class="c3"
+    data-testid="paragraph"
+  >
+    meme
+  </p>
+</div>
+`;
+
+exports[`Text Should match snapshots with sizeMedium 2`] = `
+<h2
+  class="sc-dkPtRN fPcCZM"
+>
+  meme
+</h2>
+`;
+
+exports[`Text Should match snapshots with sizeMedium 3`] = `
+<p
+  class="sc-hKwDye bttahX"
+  data-testid="paragraph"
+>
+  meme
+</p>
+`;

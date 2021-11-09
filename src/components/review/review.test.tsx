@@ -16,6 +16,7 @@ describe('Review', () => {
 
     const reviewText = screen.getByText(/revietext/gi);
     expect(reviewText).toBeInTheDocument();
+    expect(reviewText).toMatchSnapshot();
   });
 
   it('Should render reviewer description', () => {
@@ -30,6 +31,7 @@ describe('Review', () => {
 
     const reviewerDescription = screen.getByText(/reviewer description/gi);
     expect(reviewerDescription).toBeInTheDocument();
+    expect(reviewerDescription).toMatchSnapshot();
   });
 
   it('Should render reviewer name', () => {
@@ -44,5 +46,6 @@ describe('Review', () => {
 
     const reviewer = screen.getByText(/reviewer/gi);
     expect(reviewer).toBeInTheDocument();
+    expect(reviewer).toMatchSnapshot();
   });
 });
